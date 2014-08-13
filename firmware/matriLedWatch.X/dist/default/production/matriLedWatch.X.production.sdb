@@ -1,0 +1,619 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1947 ]
+[d frameptr 6 ]
+"173 /Users/ufanders/Documents/GitHub/matriLedWatch/firmware/2010_05_28_b_matriLedWatch_main.c
+[v _main main `(v  1 e 0 0 ]
+"273
+[v _init init `(uc  1 e 1 0 ]
+"381
+[v _isr isr `II(v  1 s 0 isr ]
+"600
+[v _matrixTest matrixTest `(v  1 e 0 0 ]
+"664
+[v _bitmapTest bitmapTest `(v  1 e 0 0 ]
+"685
+[v _bitmapPutPixel bitmapPutPixel `(v  1 e 0 0 ]
+"709
+[v _bitmapGetPixel bitmapGetPixel `(v  1 e 0 0 ]
+"733
+[v _bitmapDrawChar bitmapDrawChar `(v  1 e 0 0 ]
+"762
+[v _bitmapClear bitmapClear `(v  1 e 0 0 ]
+"771
+[v _setTime setTime `(v  1 e 0 0 ]
+"931
+[v _showTime showTime `(v  1 e 0 0 ]
+"1150
+[v _getBattery getBattery `(uc  1 e 1 0 ]
+"1174
+[v _fastClock fastClock `(v  1 e 0 0 ]
+"35 /Users/ufanders/Documents/GitHub/matriLedWatch/firmware/BMA150.c
+[v _InitBma150 InitBma150 `(v  1 e 0 0 ]
+"86
+[v _BMA150_WriteByte BMA150_WriteByte `(v  1 e 0 0 ]
+"128
+[v _BMA150_ReadByte BMA150_ReadByte `(uc  1 e 1 0 ]
+"4 /Applications/microchip/xc8/v1.32/sources/common/abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 /Applications/microchip/xc8/v1.32/sources/common/abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"4 /Applications/microchip/xc8/v1.32/sources/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"33 /Applications/microchip/xc8/v1.32/sources/common/abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 /Applications/microchip/xc8/v1.32/sources/common/almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 /Applications/microchip/xc8/v1.32/sources/common/altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 /Applications/microchip/xc8/v1.32/sources/common/attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 /Applications/microchip/xc8/v1.32/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 /Applications/microchip/xc8/v1.32/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v1.32/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 /Applications/microchip/xc8/v1.32/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v1.32/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v1.32/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 /Applications/microchip/xc8/v1.32/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 /Applications/microchip/xc8/v1.32/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v1.32/sources/common/lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 /Applications/microchip/xc8/v1.32/sources/common/lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 /Applications/microchip/xc8/v1.32/sources/common/lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 /Applications/microchip/xc8/v1.32/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 /Applications/microchip/xc8/v1.32/sources/common/lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 /Applications/microchip/xc8/v1.32/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v1.32/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /Applications/microchip/xc8/v1.32/sources/common/Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 /Applications/microchip/xc8/v1.32/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v1.32/sources/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 /Applications/microchip/xc8/v1.32/sources/pic/eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 /Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"84 /Users/ufanders/Documents/GitHub/matriLedWatch/firmware/2010_05_28_b_matriLedWatch_main.c
+[v _currentState currentState `VEuc  1 e 1 0 ]
+"85
+[v _timerTicks timerTicks `VEui  1 e 2 0 ]
+"86
+[v _updateDisplayRequest updateDisplayRequest `uc  1 e 1 0 ]
+"100
+[v _fontPtr fontPtr `*.25DCCuc  1 e 2 0 ]
+"149
+[v _bitmap bitmap `[192]uc  1 e 192 @9008 ]
+"150
+[v _currentRefreshingColor currentRefreshingColor `VNEuc  1 e 1 0 ]
+[v _currentRefreshingRow currentRefreshingRow `VNEuc  1 e 1 0 ]
+[v _currentRefreshingRowIndex currentRefreshingRowIndex `VNEuc  1 e 1 0 ]
+[v _currentRefreshingPwmSweep currentRefreshingPwmSweep `VNEuc  1 e 1 0 ]
+"164
+[v _tickCounter tickCounter `VNEuc  1 e 1 0 ]
+[v _newSecond newSecond `VNEuc  1 e 1 0 ]
+"165
+[v _tmr1Value tmr1Value `VNEui  1 e 2 0 ]
+"166
+[v _hours hours `VNEuc  1 e 1 0 ]
+[v _minutes minutes `VNEuc  1 e 1 0 ]
+[v _seconds seconds `VNEuc  1 e 1 0 ]
+"167
+[v _ampm ampm `VNEb  1 e 0 0 ]
+"8 /Users/ufanders/Documents/GitHub/matriLedWatch/firmware/include/2010_05_07_font5x7.h
+[v _font font `DCC[640]uc  1 e 640 0 ]
+[s S278 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"673 /Applications/microchip/xc8/v1.32/include/pic16f1947.h
+[s S287 . 1 `uc 1 SEG30 1 0 :1:0 
+`uc 1 SEG8 1 0 :1:1 
+`uc 1 SEG9 1 0 :1:2 
+`uc 1 SEG10 1 0 :1:3 
+`uc 1 SEG11 1 0 :1:4 
+`uc 1 SEG29 1 0 :1:5 
+`uc 1 SEG38 1 0 :1:6 
+`uc 1 SEG39 1 0 :1:7 
+]
+[s S296 . 1 `uc 1 SRI 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 T1G 1 0 :1:5 
+]
+[s S300 . 1 `uc 1 FLT0 1 0 :1:0 
+]
+[u S302 . 1 `S278 1 . 1 0 `S287 1 . 1 0 `S296 1 . 1 0 `S300 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES302  1 e 1 @13 ]
+[s S772 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"1378
+[s S781 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S786 . 1 `S772 1 . 1 0 `S781 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES786  1 e 1 @17 ]
+"1581
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"1600
+[v _TMR1 TMR1 `VEus  1 e 2 @22 ]
+"1644
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S134 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"1666
+[s S143 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[u S147 . 1 `S134 1 . 1 0 `S143 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES147  1 e 1 @24 ]
+"1791
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"1810
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"1829
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S347 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"1850
+[s S355 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S359 . 1 `S347 1 . 1 0 `S355 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES359  1 e 1 @28 ]
+"2009
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S25 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2087
+[u S34 . 1 `S25 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES34  1 e 1 @141 ]
+"2148
+[v _TRISCbits TRISCbits `VES34  1 e 1 @142 ]
+"2192
+[v _TRISD TRISD `VEuc  1 e 1 @143 ]
+"2253
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+"2540
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"2787
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2875
+[v _OSCSTATbits OSCSTATbits `VES34  1 e 1 @154 ]
+"2944
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"2963
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S403 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"2992
+[s S411 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S415 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S418 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[u S421 . 1 `S403 1 . 1 0 `S411 1 . 1 0 `S415 1 . 1 0 `S418 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES421  1 e 1 @157 ]
+"3051
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"3122
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"3200
+[v _LATBbits LATBbits `VES34  1 e 1 @269 ]
+"3261
+[v _LATCbits LATCbits `VES34  1 e 1 @270 ]
+"3305
+[v _LATD LATD `VEuc  1 e 1 @271 ]
+"3374
+[v _LATE LATE `VEuc  1 e 1 @272 ]
+"3734
+[v _FVRCON FVRCON `VEuc  1 e 1 @279 ]
+[s S375 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"3755
+[s S384 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+]
+[u S387 . 1 `S375 1 . 1 0 `S384 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES387  1 e 1 @279 ]
+"4223
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"4275
+[v _ANSELE ANSELE `VEuc  1 e 1 @400 ]
+"4314
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"4369
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"4420
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"4481
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"4963
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"5032
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"5143
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+"5165
+[v _SSP1STATbits SSP1STATbits `VES34  1 e 1 @532 ]
+"5264
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+"5290
+[v _SSP1CON1bits SSP1CON1bits `VES34  1 e 1 @533 ]
+"7379
+[v _TRISFbits TRISFbits `VES34  1 e 1 @780 ]
+[s S59 . 1 `uc 1 LATG0 1 0 :1:0 
+`uc 1 LATG1 1 0 :1:1 
+`uc 1 LATG2 1 0 :1:2 
+`uc 1 LATG3 1 0 :1:3 
+`uc 1 LATG4 1 0 :1:4 
+`uc 1 LATG5 1 0 :1:5 
+]
+"7438
+[u S66 . 1 `S59 1 . 1 0 ]
+[v _TRISGbits TRISGbits `VES66  1 e 1 @781 ]
+"8005
+[v _LATFbits LATFbits `VES34  1 e 1 @908 ]
+"8064
+[v _LATGbits LATGbits `VES66  1 e 1 @909 ]
+"8098
+[v _IOCBP IOCBP `VEuc  1 e 1 @916 ]
+"8167
+[v _IOCBN IOCBN `VEuc  1 e 1 @917 ]
+"8236
+[v _IOCBF IOCBF `VEuc  1 e 1 @918 ]
+[s S252 . 1 `uc 1 IOCBF0 1 0 :1:0 
+`uc 1 IOCBF1 1 0 :1:1 
+`uc 1 IOCBF2 1 0 :1:2 
+`uc 1 IOCBF3 1 0 :1:3 
+`uc 1 IOCBF4 1 0 :1:4 
+`uc 1 IOCBF5 1 0 :1:5 
+`uc 1 IOCBF6 1 0 :1:6 
+`uc 1 IOCBF7 1 0 :1:7 
+]
+"8256
+[s S261 . 1 `uc 1 IOCBF 1 0 :8:0 
+]
+[u S263 . 1 `S252 1 . 1 0 `S261 1 . 1 0 ]
+[v _IOCBFbits IOCBFbits `VES263  1 e 1 @918 ]
+"8305
+[v _ANSELF ANSELF `VEuc  1 e 1 @1036 ]
+"8374
+[v _ANSELG ANSELG `VEuc  1 e 1 @1037 ]
+"11483
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"11737
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"11803
+[v _IOCIE IOCIE `VEb  1 e 0 @91 ]
+"11805
+[v _IOCIF IOCIF `VEb  1 e 0 @88 ]
+"12073
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"12169
+[v _RD RD `VEb  1 e 0 @3240 ]
+"12985
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"12987
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"13001
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1160 ]
+"13003
+[v _TMR1IF TMR1IF `VEb  1 e 0 @136 ]
+"13007
+[v _TMR2IE TMR2IE `VEb  1 e 0 @1161 ]
+"13009
+[v _TMR2IF TMR2IF `VEb  1 e 0 @137 ]
+"13211
+[v _WR WR `VEb  1 e 0 @3241 ]
+"13213
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"173 /Users/ufanders/Documents/GitHub/matriLedWatch/firmware/2010_05_28_b_matriLedWatch_main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"271
+} 0
+"931
+[v _showTime showTime `(v  1 e 0 0 ]
+{
+"933
+[v showTime@currentAnimationFrame currentAnimationFrame `uc  1 a 1 27 ]
+[v showTime@x x `uc  1 a 1 26 ]
+[v showTime@y y `uc  1 a 1 25 ]
+"935
+[v showTime@currentAnimationFrameSigned currentAnimationFrameSigned `c  1 a 1 24 ]
+"936
+[v showTime@elementMinuteUnits elementMinuteUnits `uc  1 a 1 23 ]
+[v showTime@elementMinuteTens elementMinuteTens `uc  1 a 1 22 ]
+[v showTime@elementHourUnits elementHourUnits `uc  1 a 1 21 ]
+[v showTime@elementHourTens elementHourTens `uc  1 a 1 20 ]
+"933
+[v showTime@tempPixelB tempPixelB `uc  1 a 1 19 ]
+[v showTime@tempPixelG tempPixelG `uc  1 a 1 18 ]
+[v showTime@tempPixelR tempPixelR `uc  1 a 1 17 ]
+[v showTime@loopsUntilTimeout loopsUntilTimeout `uc  1 a 1 16 ]
+[v showTime@yLast yLast `uc  1 a 1 15 ]
+[v showTime@xLast xLast `uc  1 a 1 14 ]
+[v showTime@currentPwmLevel currentPwmLevel `uc  1 a 1 13 ]
+"1107
+} 0
+"709
+[v _bitmapGetPixel bitmapGetPixel `(v  1 e 0 0 ]
+{
+[v bitmapGetPixel@x x `uc  1 a 1 wreg ]
+"711
+[v bitmapGetPixel@currentPixelPosition currentPixelPosition `uc  1 a 1 7 ]
+[v bitmapGetPixel@i i `uc  1 a 1 6 ]
+"709
+[v bitmapGetPixel@x x `uc  1 a 1 wreg ]
+[v bitmapGetPixel@y y `uc  1 p 1 0 ]
+[v bitmapGetPixel@r r `*.4uc  1 p 1 1 ]
+[v bitmapGetPixel@g g `*.4uc  1 p 1 2 ]
+[v bitmapGetPixel@b b `*.4uc  1 p 1 3 ]
+"713
+[v bitmapGetPixel@x x `uc  1 a 1 5 ]
+"731
+} 0
+"771
+[v _setTime setTime `(v  1 e 0 0 ]
+{
+"775
+[v setTime@currentFieldSelected currentFieldSelected `ui  1 a 2 24 ]
+"774
+[v setTime@tempValue tempValue `i  1 a 2 22 ]
+[v setTime@currentFieldValue currentFieldValue `i  1 a 2 19 ]
+[v setTime@tempValueUnits tempValueUnits `i  1 a 2 14 ]
+[v setTime@tempValueTens tempValueTens `i  1 a 2 12 ]
+"773
+[v setTime@i i `uc  1 a 1 21 ]
+"776
+[v setTime@tempMinutes tempMinutes `uc  1 a 1 18 ]
+[v setTime@tempHours tempHours `uc  1 a 1 17 ]
+"773
+[v setTime@changesMadeFlag changesMadeFlag `uc  1 a 1 16 ]
+"929
+} 0
+"685
+[v _bitmapPutPixel bitmapPutPixel `(v  1 e 0 0 ]
+{
+[v bitmapPutPixel@x x `uc  1 a 1 wreg ]
+"687
+[v bitmapPutPixel@currentPixelPosition currentPixelPosition `uc  1 a 1 8 ]
+[v bitmapPutPixel@i i `uc  1 a 1 7 ]
+"685
+[v bitmapPutPixel@x x `uc  1 a 1 wreg ]
+[v bitmapPutPixel@y y `uc  1 p 1 0 ]
+[v bitmapPutPixel@r r `uc  1 p 1 1 ]
+[v bitmapPutPixel@g g `uc  1 p 1 2 ]
+[v bitmapPutPixel@b b `uc  1 p 1 3 ]
+"689
+[v bitmapPutPixel@x x `uc  1 a 1 6 ]
+"707
+} 0
+"6 /Applications/microchip/xc8/v1.32/sources/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+"6 /Applications/microchip/xc8/v1.32/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"273 /Users/ufanders/Documents/GitHub/matriLedWatch/firmware/2010_05_28_b_matriLedWatch_main.c
+[v _init init `(uc  1 e 1 0 ]
+{
+"379
+} 0
+"762
+[v _bitmapClear bitmapClear `(v  1 e 0 0 ]
+{
+"764
+[v bitmapClear@i i `uc  1 a 1 1 ]
+"769
+} 0
+"35 /Users/ufanders/Documents/GitHub/matriLedWatch/firmware/BMA150.c
+[v _InitBma150 InitBma150 `(v  1 e 0 0 ]
+{
+"37
+[v InitBma150@i i `us  1 a 2 7 ]
+[s S636 . 1 `uc 1 chip_id 1 0 :3:0 
+`uc 1 . 1 0 :5:3 
+]
+"38
+[s S639 . 1 `uc 1 ml_version 1 0 :4:0 
+`uc 1 al_version 1 0 :4:4 
+]
+[s S642 . 1 `uc 1 new_data_x 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 acc_x_msb 1 0 :2:6 
+]
+[s S646 . 1 `uc 1 acc_x_lsb 1 0 :8:0 
+]
+[s S648 . 1 `uc 1 new_data_y 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 acc_y_msb 1 0 :2:6 
+]
+[s S652 . 1 `uc 1 acc_y_lsb 1 0 :8:0 
+]
+[s S654 . 1 `uc 1 new_data_z 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 acc_z_msb 1 0 :2:6 
+]
+[s S658 . 1 `uc 1 acc_z_lsb 1 0 :8:0 
+]
+[s S660 . 1 `uc 1 bandwidth 1 0 :3:0 
+`uc 1 range 1 0 :2:3 
+`uc 1 . 1 0 :3:5 
+]
+[u S664 . 1 `S636 1 . 1 0 `S639 1 . 1 0 `S642 1 . 1 0 `S646 1 . 1 0 `S648 1 . 1 0 `S652 1 . 1 0 `S654 1 . 1 0 `S658 1 . 1 0 `S660 1 . 1 0 `uc 1 val 1 0 ]
+[v InitBma150@reg reg `S664  1 a 1 9 ]
+"84
+} 0
+"86
+[v _BMA150_WriteByte BMA150_WriteByte `(v  1 e 0 0 ]
+{
+[v BMA150_WriteByte@address address `uc  1 a 1 wreg ]
+"88
+[v BMA150_WriteByte@storage storage `uc  1 a 1 3 ]
+"86
+[v BMA150_WriteByte@address address `uc  1 a 1 wreg ]
+[v BMA150_WriteByte@data data `uc  1 p 1 1 ]
+"91
+[v BMA150_WriteByte@address address `uc  1 a 1 4 ]
+"125
+} 0
+"128
+[v _BMA150_ReadByte BMA150_ReadByte `(uc  1 e 1 0 ]
+{
+[v BMA150_ReadByte@address address `uc  1 a 1 wreg ]
+[v BMA150_ReadByte@address address `uc  1 a 1 wreg ]
+"130
+[v BMA150_ReadByte@address address `uc  1 a 1 0 ]
+"150
+} 0
+"1174 /Users/ufanders/Documents/GitHub/matriLedWatch/firmware/2010_05_28_b_matriLedWatch_main.c
+[v _fastClock fastClock `(v  1 e 0 0 ]
+{
+"1178
+} 0
+"381
+[v _isr isr `II(v  1 s 0 isr ]
+{
+"385
+[v isr@currentRefreshingColumn currentRefreshingColumn `uc  1 a 1 8 ]
+[v isr@rowValueTempB rowValueTempB `uc  1 a 1 7 ]
+[v isr@rowValueTempG rowValueTempG `uc  1 a 1 6 ]
+[v isr@rowValueTempR rowValueTempR `uc  1 a 1 5 ]
+"598
+} 0

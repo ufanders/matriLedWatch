@@ -1,0 +1,17 @@
+___awdiv: CODE, 3506 0 84
+_init: CODE, 1768 0 145
+_bitmapClear: CODE, 2027 0 18
+_bitmapGetPixel: CODE, 3427 0 79
+_showTime: CODE, 1152 0 616
+_fastClock: CODE, 3190 0 6
+_font: STRCODE, 512 0 640
+___awmod: CODE, 3279 0 72
+_bitmapPutPixel: CODE, 3351 0 76
+_InitBma150: CODE, 324 0 99
+_main: CODE, 3208 0 71
+__initialization: CODE, 287 0 33
+_BMA150_WriteByte: CODE, 1913 0 114
+_isr: CODE, 4 0 281
+_setTime: CODE, 3590 0 506
+_BMA150_ReadByte: CODE, 423 0 89
+Total: 2929
